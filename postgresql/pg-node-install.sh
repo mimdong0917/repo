@@ -19,7 +19,7 @@ __USER__=$1
 __NODE_NO__=$2
 
 
-__VIP__="172.27.0.21"
+__VIP__="172.27.0.185"
 __SSH_PRIVATE_KEY__="-----BEGIN RSA PRIVATE KEY-----
 MIICXQIBAAKBgQCq5PYmI5OgpvZRmST1NPCZbBhHMJ9ZC0AyDMs4tt8+ue+tKyAs
 9O2Iwm+TmmrYT0Zl8MFd8T5xOf/0F0xWLbPc3RXqq32XwU0ubZ+cyOYwa4zOIHB0
@@ -66,10 +66,10 @@ apt install iputils-arping -y
 #-----------------------------------------------------------------------------
 cat >> /etc/hosts << EOF
 # Postgresql DB cluster
-172.27.1.27       pg-1
-172.27.0.32       pg-2
-172.27.0.110      pg-3
-$__VIP__          pg-vip
+172.27.0.107       pg-1
+172.27.0.52        pg-2
+172.27.0.170       pg-3
+$__VIP__           pg-vip
 EOF
 
 
